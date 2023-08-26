@@ -1,0 +1,30 @@
+blog_home:
+  path:       /
+  controller: BlogController::home
+  methods:    GET
+
+blog_list:
+  path:       /blog/{page<\d+>?1}
+  controller: BlogController::list
+  methods:    GET|HEAD
+
+blog_search:
+  path:       /blog/{_locale}/search.{_format}
+  controller: BlogController::search
+  methods:    GET|HEAD
+
+group:
+  prefix: /admin
+  routes:
+    blog_home:
+      path: /
+      controller: BlogController::home
+      methods: GET
+    blog_list:
+      path: /blog/{page<\d+>?1}
+      controller: BlogController::list
+      methods: GET|HEAD
+    blog_search:
+      path: /blog/{_locale}/search.{_format}
+      controller: BlogController::search
+      methods: GET|HEAD

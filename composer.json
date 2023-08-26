@@ -1,0 +1,27 @@
+{
+  "name": "merterkoyuncu/blogtask_solution",
+  "description": "Lightweight MVC Framework",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "MERTER KOYUNCU",
+      "email": "merterkoyuncu@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": [
+        "src"
+      ]
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.3",
+    "phpunit/phpunit": "^10.3"
+  },
+  "require": {
+    "symfony/yaml": "^6.3",
+    "vlucas/phpdotenv": "^5.5"
+  }
+}
